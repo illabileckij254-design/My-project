@@ -1,0 +1,43 @@
+.btn {
+  width: 200px;
+  height: 200px;
+}
+.btn img {
+  width: 100%;
+}
+.btn {
+  background-color: transparent;
+  background-image: url("watermarked_img_5330222000219084182.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), filter 0.2s ease;
+}
+.btn:hover {
+  transform: scale(1.1);
+  filter: brightness(1.05) drop-shadow(0 5px 15px rgba(0, 0, 0, 0.2));
+}
+.btn:active {
+  transform: scale(0.95);
+  filter: brightness(0.9);
+}
+@keyframes idle-shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(1deg);
+  }
+  75% {
+    transform: rotate(-1deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.btn {
+  animation: idle-shake 2s infinite ease-in-out;
+}/*# sourceMappingURL=App.css.map */
