@@ -1,9 +1,9 @@
 import React from 'react'
 
-export const Counter = ({ value }) => {
+export const Counter = ({ children }) => {
   return (
     <div className='counter-display'>
-        Бали: {value}
+        Бали: {children}
     </div>
   )
 }
